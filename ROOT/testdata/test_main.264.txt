@@ -1,0 +1,75 @@
+C:\DATA\projects\defraser\defraserStuff\JM\bin>lencod.exe -d encoder_main.cfg
+Setting Default Parameters...
+Parsing Configfile encoder_main.cfg.............................................
+................................................................................
+................................................................................
+................................................................................
+.
+
+------------------------------- JM 18.1 (FRExt) -------------------------------
+ Input YUV file                    : foreman_part_qcif.yuv
+ Output H.264 bitstream            : test.264
+ Output YUV file                   : test_rec.yuv
+ YUV Format                        : YUV 4:2:0
+ Frames to be encoded              : 3
+ Freq. for encoded bitstream       : 30.00
+ PicInterlace / MbInterlace        : 0/0
+ Transform8x8Mode                  : 0
+ ME Metric for Refinement Level 0  : SAD
+ ME Metric for Refinement Level 1  : Hadamard SAD
+ ME Metric for Refinement Level 2  : Hadamard SAD
+ Mode Decision Metric              : Hadamard SAD
+ Motion Estimation for components  : Y
+ Image format                      : 176x144 (176x144)
+ Error robustness                  : Off
+ Search range                      : 32
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
+ Sequence type                     : I-B-P-B-P (QP: I 28, P 28, B 30)
+ Entropy coding method             : CABAC
+ Profile/Level IDC                 : (77,40)
+ Motion Estimation Scheme          : Fast Full Search
+ Search range restrictions         : none
+ RD-optimized mode decision        : used
+ Data Partitioning Mode            : 1 partition
+ Output File Format                : H.264/AVC Annex B Byte Stream Format
+-------------------------------------------------------------------------------
+Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref
+
+-------------------------------------------------------------------------------
+00000(NVB)     168
+00000(IDR)   21096   28  37.526  41.289  42.851       285       0    FRM    3
+00002( P )    8200   28  36.824  40.943  42.317      6518    6157    FRM    2
+00001( B )    2696   30  36.222  41.126  42.620     22996   22619    FRM    0
+-------------------------------------------------------------------------------
+ Total Frames:  3
+ Leaky BucketRateFile does not have valid entries.
+ Using rate calculated from avg. rate
+ Number Leaky Buckets: 8
+     Rmin     Bmin     Fmin
+   319920    21096    21096
+   399900    21096    21096
+   479880    21096    21096
+   559860    21096    21096
+   639840    21096    21096
+   719820    21096    21096
+   799800    21096    21096
+   879780    21096    21096
+------------------ Average data all frames  -----------------------------------
+
+ Total encoding time for the seq.  :  29.800 sec (0.10 fps)
+ Total ME time for sequence        :  28.777 sec
+
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  36.857,  36.825,  13.50797 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.119,  41.117,   5.02783 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  42.596,  42.590,   3.58149 }
+
+ Total bits                        : 32160 (I 21096, P 8200, B 2696 NVB 168)
+ Bit rate (kbit/s)  @ 30.00 Hz     : 321.60
+ Bits to avoid Startcode Emulation : 30
+ Bits for parameter sets           : 168
+ Bits for filler data              : 0
+
+-------------------------------------------------------------------------------
+Exit JM 18 (FRExt) encoder ver 18.1

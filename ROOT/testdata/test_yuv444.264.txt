@@ -1,0 +1,96 @@
+C:\DATA\projects\defraser\defraserStuff\JM\bin>lencod -d encoder_yuv444.cfg
+Setting Default Parameters...
+Parsing Configfile encoder_yuv444.cfg...........................................
+................................................................................
+................................................................................
+................................................................................
+................................................................................
+...................
+
+Parsing Quantization Offset Matrix file q_offset.cfg ....................
+------------------------------- JM 18.1 (FRExt) -------------------------------
+ Input YUV file                    : foreman_part_qcif_444.yuv
+ Output H.264 bitstream            : test.264
+ Output YUV file                   : test_rec.yuv
+ YUV Format                        : YUV 4:4:4
+ Frames to be encoded              : 3
+ Freq. for encoded bitstream       : 30.00
+ PicInterlace / MbInterlace        : 0/0
+ Transform8x8Mode                  : 1
+ ME Metric for Refinement Level 0  : SAD
+ ME Metric for Refinement Level 1  : Hadamard SAD
+ ME Metric for Refinement Level 2  : Hadamard SAD
+ Mode Decision Metric              : Hadamard SAD
+ Motion Estimation for components  : Y
+ Image format                      : 176x144 (176x144)
+ Error robustness                  : Off
+ Search range                      : 32
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
+ Sequence type                     : I-B-P-B-P (QP: I 28, P 28, B 30)
+ Entropy coding method             : CABAC
+ Profile/Level IDC                 : (244,40)
+ Motion Estimation Scheme          : Fast Full Search
+ Search range restrictions         : none
+ RD-optimized mode decision        : used
+ Data Partitioning Mode            : 1 partition
+ Output File Format                : H.264/AVC Annex B Byte Stream Format
+-------------------------------------------------------------------------------
+Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref
+
+-------------------------------------------------------------------------------
+00000(NVB)     176
+00000(IDR)   22744   28  37.758  43.707  44.496       762       0    FRM    3
+00002( P )    9168   28  37.221  43.093  44.228      7291    6333    FRM    2
+00001( B )    2696   30  36.365  43.110  43.813     24024   22995    FRM    0
+-------------------------------------------------------------------------------
+ Total Frames:  3
+ Leaky BucketRateFile does not have valid entries.
+ Using rate calculated from avg. rate
+ Number Leaky Buckets: 8
+     Rmin     Bmin     Fmin
+   346080    22744    22744
+   432600    22744    22744
+   519120    22744    22744
+   605640    22744    22744
+   692160    22744    22744
+   778680    22744    22744
+   865200    22744    22744
+   951720    22744    22744
+------------------ Average data all frames  -----------------------------------
+
+ Total encoding time for the seq.  :  32.078 sec (0.09 fps)
+ Total ME time for sequence        :  29.329 sec
+
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  37.114,  37.076,  12.74863 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  43.304,  43.294,   3.04545 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  44.179,  44.170,   2.48945 }
+
+ Total bits                        : 34784 (I 22744, P 9168, B 2696 NVB 176)
+ Bit rate (kbit/s)  @ 30.00 Hz     : 347.84
+ Bits to avoid Startcode Emulation : 21
+ Bits for parameter sets           : 176
+ Bits for filler data              : 0
+
+-------------------------------------------------------------------------------
+Exit JM 18 (FRExt) encoder ver 18.1
+
+
+
+
+uit log.dat;
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+|                          Encoder statistics. This file is generated during first encoding session, new sessions will be appended                                                                                                                                                                                 |
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+|     ver     | Date  | Time  |               Sequence                 | #Img |P/MbInt| QPI| QPP| QPB| Format  |Iperiod| #B | FMES | Hdmd | S.R |#Ref | Freq |Coding|RD-opt|Intra upd|8x8Tr| SNRY 1| SNRU 1| SNRV 1| SNRY N| SNRU N| SNRV N|#Bitr I|#Bitr P|#Bitr B|#Bitr IPB|     Total Time   |      Me Time     |
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+| 18.1/(FRExt)| 11/25 | 15:24 |                   foreman_part_qcif.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  7 |  FFS |  022 |  32 |  5  | 30.00| CABAC|   1  |   OFF   |  1  | 38.894| 42.244| 43.945| 37.939| 42.095| 43.803| 241520| 104720|  21520|   370960|         481368   |         459491   |
+| 18.1/(FRExt)| 11/25 | 18:13 |                   foreman_part_qcif.yuv|    3 |  0/0  | 28 | 28 | 24 | 176x144 |    0  |  0 |  FFS |  022 |  32 |  5  | 30.00| CAVLC|   1  |   OFF   |  0  | 37.427| 41.282| 42.818| 37.009| 41.016| 42.675| 219840| 120800|      0|   342320|          19359   |          18473   |
+| 18.1/(FRExt)| 11/25 | 18:25 |                   foreman_part_qcif.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  1 |  FFS |  022 |  32 |  5  | 30.00| CAVLC|   1  |   OFF   |  0  | 37.489| 41.289| 42.851| 36.835| 41.111| 42.619| 220880|  86000|  27680|   336240|          29742   |          28834   |
+| 18.1/(FRExt)| 11/25 | 18:29 |                   foreman_part_qcif.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  1 |  FFS |  022 |  32 |  5  | 30.00| CABAC|   1  |   OFF   |  0  | 37.526| 41.289| 42.851| 36.857| 41.119| 42.596| 210960|  82000|  26960|   321600|          29800   |          28777   |
+| 18.1/(FRExt)| 11/29 | 10:33 |                   foreman_part_qcif.yuv|    3 |  0/0  | 38 | 38 | 38 | 176x144 |    0  |  1 |  FFS |  022 |  32 |  5  | 15.00| CAVLC|   1  |   OFF   |  0  | 30.815| 38.388| 38.832| 30.145| 38.135| 38.817|  64200|      0|  13440|    78900|          17810   |          17286   |
+| 18.1/(FRExt)| 11/29 | 11:39 |                   foreman_part_qcif.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  7 | EPZS |  022 |  32 |  5  | 30.00| CABAC|   1  |   OFF   |  1  | 37.701| 41.571| 43.231| 36.312| 41.116| 42.716| 215280|      0|  69200|   287680|           3977   |           2191   |
+| 18.1/(FRExt)| 11/29 | 11:44 |                   foreman_part_qcif.yuv|    3 |  0/0  | 38 | 38 | 38 | 176x144 |    0  |  1 |  FFS |  002 |  16 |  5  | 15.00| CAVLC|   1  |   OFF   |  0  | 30.853| 38.122| 38.762| 29.941| 37.884| 38.467|  64740|      0|  12660|    78660|           4802   |           3839   |
+| 18.1/(FRExt)| 12/07 | 11:51 |               foreman_part_qcif_422.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  1 |  FFS |  022 |  32 |  5  | 30.00| CABAC|   1  |   OFF   |  1  | 37.719| 42.499| 44.317| 37.018| 42.189| 43.956| 224800|  87680|  26080|   340320|          31062   |          29308   |
+| 18.1/(FRExt)| 01/17 | 10:44 |               foreman_part_qcif_444.yuv|    3 |  0/0  | 28 | 28 | 30 | 176x144 |    0  |  1 |  FFS |  022 |  32 |  5  | 30.00| CABAC|   1  |   OFF   |  1  | 37.758| 43.707| 44.496| 37.114| 43.304| 44.179| 227440|  91680|  26960|   347840|          32078   |          29329   |

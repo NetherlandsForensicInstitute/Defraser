@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileInfo CreatedWith="Defraser" Version="0.5.0" User="robert" Date="vrijdag 6 maart 2009" Time="10:01:53">
+  <Container File="C:\Documents and Settings\robert\My Documents\Defraser\20081211-dev-0.4.5_Mpeg4\ROOT\testdata\Mpeg4DetectorNewResultWhenH263VopFoundAfterMpeg4VideoObjectLayer.m4v" Detector="MPEG-4 Video/H263" DetectorVersion="1.0.0" Offset="0" Length="32">
+    <Result Name="VisualObjectSequenceStart" Offset="0" Length="5">
+      <Attributes>
+        <Attribute Name="StartCode" Value="0x000001B0" />
+        <Attribute Name="ProfileLevelIndication" Value="8" />
+      </Attributes>
+      <Result Name="VisualObject" Offset="5" Length="9">
+        <Attributes>
+          <Attribute Name="StartCode" Value="0x000001B5" />
+          <Attribute Name="Identifier" Value="False" />
+          <Attribute Name="Type" Value="1" />
+          <Attribute Name="VideoSignalType" Value="True" />
+          <Attribute Name="VideoFormat" Value="5 (UnspecifiedVideoFormat)" />
+          <Attribute Name="VideoRange" Value="True" />
+          <Attribute Name="ColourDescription" Value="True" />
+          <Attribute Name="ColourPrimaries" Value="2" />
+          <Attribute Name="TransferCharacteristics" Value="6" />
+          <Attribute Name="MatrixCoefficients" Value="6" />
+        </Attributes>
+        <Result Name="VideoObject" Offset="14" Length="4">
+          <Attributes>
+            <Attribute Name="StartCode" Value="0x00000100" />
+          </Attributes>
+          <Result Name="VideoObjectLayer" Offset="18" Length="14">
+            <Attributes>
+              <Attribute Name="StartCode" Value="0x00000120" />
+              <Attribute Name="ID" Value="0" />
+              <Attribute Name="RandomAccessibleVol" Value="False" />
+              <Attribute Name="TypeIndication" Value="1" />
+              <Attribute Name="AspectRatioInfo" Value="1 (Square1_1)" />
+              <Attribute Name="VolControlParameters" Value="False" />
+              <Attribute Name="Shape" Value="0 (Rectangular)" />
+              <Attribute Name="ShapeExtension" Value="13" />
+              <Attribute Name="VopTimeIncrementResolution" Value="1000" />
+              <Attribute Name="FixedVopRate" Value="False" />
+              <Attribute Name="Width" Value="176" />
+              <Attribute Name="Height" Value="144" />
+              <Attribute Name="Interlaced" Value="False" />
+              <Attribute Name="ObmcDisable" Value="True" />
+              <Attribute Name="SpriteEnable" Value="0" />
+              <Attribute Name="Not8bit" Value="False" />
+              <Attribute Name="QuantPrecision" Value="5" />
+              <Attribute Name="BitsPerPixel" Value="8" />
+              <Attribute Name="QuantType" Value="False" />
+              <Attribute Name="ResyncMarkerDisable" Value="True" />
+              <Attribute Name="DataPartitioned" Value="False" />
+              <Attribute Name="Scalability" Value="False" />
+            </Attributes>
+          </Result>
+        </Result>
+      </Result>
+    </Result>
+  </Container>
+</FileInfo>

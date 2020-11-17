@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Defraser.GuiCe.DefaultCodecHeaderManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Class Name="Defraser.GuiCe.DefaultCodecHeaderManager.CodecListItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DefaultCodecHeaderManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="Defraser.GuiCe.DefaultCodecHeaderManager.DefaultCodecHeaderChangeHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DefaultCodecHeaderManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <AssociationLine Name="_backgroundFileScanner" Type="Defraser.GuiCe.BackgroundFileScanner">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.611" Y="0.83" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_editDefaultCodecHeader" Type="Defraser.GuiCe.EditDefaultCodecHeader">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.189" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABQBAACAEAgAQAAAAAAAAIAEAgAAEABAAABwBAAAAA=</HashCode>
+      <FileName>DefaultCodecHeaderManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_backgroundFileScanner" />
+      <Field Name="_editDefaultCodecHeader" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Defraser.GuiCe.EditDefaultCodecHeader" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Class Name="Defraser.GuiCe.EditDefaultCodecHeader.DefaultCodecHeaderItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EditDefaultCodecHeader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Defraser.GuiCe.EditDefaultCodecHeader.FileListItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>EditDefaultCodecHeader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="_searchHeaderCreator" Type="Defraser.Util.Creator&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.099" Y="0.105" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>hAAQAoBAQiAAAIAAQACABAECEBJAAAEABAQEAAQAACg=</HashCode>
+      <FileName>EditDefaultCodecHeader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_searchHeaderCreator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Defraser.GuiCe.BackgroundDataBlockScanner" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAEEQAAAAAAAQIAAAACAAAgIAAAIAAAAAIAAAA=</HashCode>
+      <FileName>BackgroundDataBlockScanner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.2" />
+  </Class>
+  <Class Name="Defraser.GuiCe.BackgroundFileScanner" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAEQAABAAAAIQAAAgQCgAAAAAAAISAgACEAAgQ=</HashCode>
+      <FileName>BackgroundFileScanner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.223" />
+  </Class>
+  <Class Name="Defraser.GuiCe.SearchHeader" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="2.75" />
+    <NestedTypes>
+      <Enum Name="Defraser.GuiCe.SearchHeader.SearchMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SearchHeader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="_backgroundDataBlockScanner" Type="Defraser.GuiCe.BackgroundDataBlockScanner">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.037" Y="0.121" Height="0.16" Width="1.932" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAVAARACIAABBAAICABwACFAAAAAAIAAAEAAABAAA=</HashCode>
+      <FileName>SearchHeader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_backgroundDataBlockScanner" />
+    </ShowAsAssociation>
+  </Class>
+  <Delegate Name="Defraser.Util.Creator&lt;T&gt;" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="2.75" />
+    <TypeIdentifier />
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

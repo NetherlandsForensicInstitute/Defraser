@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileInfo CreatedWith="Defraser" Version="0.5.0" User="robert" Date="vrijdag 6 maart 2009" Time="10:41:59">
+  <Container File="C:\Documents and Settings\robert\My Documents\Defraser\20081211-dev-0.4.5_Mpeg4\ROOT\testdata\Mpeg4DetectorNewResultWhenH263VopFoundAfterTwoMpeg4Vops.m4v" Detector="MPEG-4 Video/H263" DetectorVersion="1.0.0" Offset="0" Length="953">
+    <Result Name="Vop" Offset="0" Length="314">
+      <Attributes>
+        <Attribute Name="StartCode" Value="0x000001B6" />
+        <Attribute Name="ShortVideoHeader" Value="False" />
+        <Attribute Name="CodingType" Value="P_VOP" />
+        <Attribute Name="ModuloTimeBase" Value="0" />
+      </Attributes>
+    </Result>
+    <Result Name="Vop" Offset="314" Length="639">
+      <Attributes>
+        <Attribute Name="StartCode" Value="0x000001B6" />
+        <Attribute Name="ShortVideoHeader" Value="False" />
+        <Attribute Name="CodingType" Value="P_VOP" />
+        <Attribute Name="ModuloTimeBase" Value="0" />
+      </Attributes>
+    </Result>
+  </Container>
+</FileInfo>

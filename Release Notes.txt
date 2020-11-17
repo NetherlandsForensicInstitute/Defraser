@@ -1,0 +1,294 @@
+Release Notes - Defraser - Version 1.6.0
+
+** Improvement
+    * [DEFRASER-1369] - .NET upgrade to 4.6.1
+
+
+Release 1.5.0
+==================
+CHG - DEFRASER-1351: Add Parameters to Send-To functionality in Defraser
+
+Release 1.4.2
+==================
+CHG - Added option to specify the number of H.264 slices to try the reference header within one fragment
+FIX - Dates are not shown correctly in 3GP files that use Mac base time (1904) instead of Unix (1970)
+FIX - Potential infinite loop caused by failing to detect the end of H.264 NAL units
+
+Release 1.4.1
+==================
+NEW - Improve scanning for data blocks by using reference headers
+NEW - Unified installer for 32- and 64-bit platforms
+NEW - Show scan time for each file in 'File Details' pane
+NEW - Support for more flavors of 3GP
+CHG - Detect truncation point of video data in 3GP streams
+CHG - H.264 false hit detection improvements
+CHG - Automatically detect 32/64 bit FFmpeg at runtime
+CHG - Report overlapping data blocks, instead of just the largest block
+FIX - Major drop in performance for certain files that contain overlapping datablocks
+FIX - Detection of video data in 3GP files
+FIX - Rescanning a file that has changed may use an older copy due to caching
+FIX - Detectors used for scanning are not listed in the forensic integrity log
+FIX - Cannot save project file when codec stream name contain illegal characters
+FIX - Detection of H.264 results in byte stream format
+FIX - Miscellaneous bugs in the H.264 detector
+FIX - Some menu items in the header pane context menu remain disabled
+FIX - Empty 'mdat' atoms break up 3GP files
+FIX - Building of 3GP detector in 'Debug' mode
+
+Release 1.3.5
+==================
+NEW - Added shortcuts for “Goto End Offset [of Last Child] in Hex Workshop”
+CHG - Add support for more QuickTime flavors ('ftyp' values)
+CHG - Report all container and codec detectors used for generating results
+CHG - Changes to detector API. Requires modification of (external) plugins.
+CHG - Rescan 'mdat' block of corrupt QuickTime/3GPP files with *ALL* detectors
+CHG - Reduce false hits in detected results
+CHG - Support video formats with FourCC of 'ms\0?'
+FIX - “Goto Offset in Hex Workshop” does not go to the correct offset (sometimes)
+FIX - “Send Selection To > Existing Workpad” is broken
+FIX - “Send Selection To” external program does not work for streams in containers
+FIX - Send to list does not include installed video players (64-bit install)
+FIX - Saving of selections does not automatically suggest a file extension
+FIX - Key frames are always saved in PNG format, instead of the chosen format
+FIX - Save project containing fragmented results (in some rare cases)
+FIX - Save project file when a codec stream name contains illegal characters
+FIX - “Project Keyframe Overview” does not display the source of keyframes after scrolling
+FIX - Renaming work pads does not work correctly
+FIX - Current name of workpad is not displayed correctly in the “Rename Workpad” form
+FIX - Switching between header pane and workpad fails to update header details pane
+FIX - Display correct detector versions
+FIX - Parsing 64-bit length of QuickTime atoms
+FIX - Splitting of certain QuickTime/MP4 files, e.g. containing 'meta' atoms
+FIX - Parsing of MPEG-4 video files that contain 'group of VOP' headers
+FIX - Extremely slow scanning of MPEG-2 video data using the MPEG-4 detector
+FIX - Dropping of large AVI segments, such as 'idx1' chunks
+FIX - Incorrect parsing of MPEG-2 video slices
+FIX - Other (minor) bugs in 3GPP, AVI, MPEG-2 and MPEG-4 detectors
+FIX - Support for H.264 NAL unit streams in FFmpeg conversion code
+
+Release 1.3.0
+==================
+NEW - Make x64 compatible
+CHG - Change detector name from MPEG-4 AVC/H.264 to H.264/MPEG-4 AVC
+CHG - Log also displays event date & time
+CHG - Send to list does not automatically include Hex Workshop 6.5 (for both 64 & 32-bit install)
+CHG - Send to list should check for certain software each time it starts up (for uninstall after Defraser's install)
+FIX - MPEG-4 - VOL at end of file not found
+FIX - Update of the headers view does not always work during a scan
+FIX - User interface problems for x64 build
+FIX - Public version did not build
+FIX - Video Keyframes pane displays incorrect selection of keyframes
+FIX - No (crashing) work-in-progress plugins (like JPEG) in the published / installed version
+FIX - ReadOverFlowException scanning .mov file
+
+Release 1.2.7
+==================
+NEW – Now uses FFmpeg library to decode MPEG-1, MPEG-2, MPEG-4 and H.263 keyframes for viewing in Defraser.
+NEW – Added “Frame Preview” component for displaying the selected (key)frame.
+NEW – Added “Video Keyframes” component used to generate a thumbnail-overview of the selected video stream.
+NEW – Added “Project Keyframe Overview” which shows a sample of five keyframes per video stream of all the files in the project.
+NEW – Added “Default Codec Header”, an auto-repair function based on a user-selectable reference file. It can be used to view & save damaged frames which may be found by Defraser.
+NEW – Added option in “Add File” window to show the “Project Keyframe Overview” after scan completion.
+NEW – Added “View” menu, to re-open closed windows.
+NEW – “Reset GUI” button in the options window. 
+CHG – A new GUI framework which allows the user to fully modify the Defraser interface.
+CHG – Specification per codec type of the headers and data that are required for decoding with FFmpeg.
+CHG – Workpads are now visible in taskbar.
+CHG – Removed “Window” menu.
+CHG – Forensic log adds an extra line when saving an image that uses a reference header/file for decoding.
+CHG – Defraser builds only for the x86 architecture, otherwise the 32-bits FFmpeg library won’t work on a 64-bits OS.
+FIX – “Forensic Log” - Save browse window: Crash when saving to a directory instead of a file.
+FIX – GUI Reset when disconnecting a display. Otherwise Defraser can be launched outside the visible area of the screen.
+FIX – Workpad rename application crash.
+FIX – “Send To List” did not display the installed tools on a 64-bits OS.
+
+Release 1.1.0
+==================
+NEW - Basic H.264 detector source code added. Not yet in installer as it is work in progress. 
+FIX - 3GPP detector - mdat atom with size value 0 is now correctly handled.
+FIX - Missing 3GPP files added for unit tests
+
+Release 1.0.0 beta
+==================
+NEW - Create a forensic integrity log (optional) when saving results to a file
+NEW - MPEG-1/2 Detector now decodes slice content
+NEW - Added ASF/WMV container detector
+NEW - Using Rhino Mock library
+NEW - Using Autofac inversion of control container
+CHG - Text added to Defraser Developers Manual
+CHG - Assign asterisk (*) to project name when project is dirty
+FIX - The codec stream content is now fed to all selected codec detectors. In the previous version only the detector indicated by the container was used.
+FIX - Scan the remainder of a codec stream when 
+FIX - Temporary files created when using 'Send To' command are deleted
+FIX - Scan failed on empty file
+FIX - Third party DLL's and licenses added to source release to make build possible without downloading and installing all tools used
+FIX - MPEG-1/2 detector: false hit reduction
+
+Release 0.5.0
+=============
+NEW - New MPEG-4 detector
+NEW - Uninstallation shortcut added
+NEW - Show progress bar during 'Send To' and 'Save As'
+NEW - Added menu options 'Save Project' and 'Save Project As'
+NEW - Show end offset in header tree view
+FIX - Deletion from workpad is very slow
+FIX - ExampleDetector project fails to compile
+FIX - Stream created by 3GPP detector are not correct
+FIX - MPEG-2 video incorrectly reported as MPEG-1 video
+FIX - Sorting on length fails
+FIX - Tree view not updated when one file scanned for the second time
+FIX - Audio stream in 3GPP file not found
+
+Release 0.4.4
+=============
+NEW - Detectors are now configurable, use the Project Properties menu while no files scanned
+NEW - Automatic detection of GOM-player and adding to 'Send To List'
+NEW - Show progress bar during 'Save As Separate Files' action
+NEW - Show progress bar during 'Save As Contiguous File' action
+CHG - Project files are now saved as a XML-file and from now on better interchangeable between versions of Defraser
+FIX - Show progress bar during 'Export To XML'
+FIX - Solved out-of-memory issue when scanning huge MPEG-1/2 video files
+FIX - Cancelling of scan now works
+FIX - Last pane configuration now kept correct after pressing Cancel in the Options dialog after using the Show/Hide panes buttons
+FIX - Remove file from the recent file list if the file was not found
+FIX - If a file was not found, show its name in the error message
+FIX - Exception when no file is selected in the 'Add File' dialog after pressing the 'Run'-button
+
+Release 0.4.3
+=============
+FIX - Solved out-of-memory exceptions caused by AVI and 3GPP detectors
+
+Release 0.4.2
+=============
+NEW - MPEG-4 detector: Time Increment Resolution is shown for Video Object Layer Header
+CHG - MPEG-4 detector: better parsing of H263 VOP's (parsing of PLUSPTYPE added; still not complete yet)
+FIX - MPEG-4 detector: not all VOP's were found
+FIX - MPEG-1 & 2 detector: PesPacket with stream ID==0xBE did create a new result when pes stream contains a value != 0xFF while the end of the header stops at start of next header
+FIX - Hex/Dec value of Offset and Length caption did not always display the correct value
+FIX - File not found exception was not caught when user clicked on stream in file tree after file has been removed
+FIX - If you want to build Defraser from code, you no longer need to remove the file 'licenses.licx' from the Visual Studio Solution file
+
+Release 0.4.1
+=============
+NEW - AVI detector added
+NEW - 3GPP 64 bit ChunkOffset atom added
+CHG - MPEG-1&2 detector starts a new result when the SystemClockReference is lower than the previous value or when there is a gap.
+FIX - Exception when adding a column to the Headers view from the Headers Details view while 'Auto Fit' is enabled
+FIX - New project is now always added to the Recent Projects menu option
+FIX - Sort order in Files view now on filename instead of path
+
+Release 0.4.0
+=============
+NEW - Conversion of the project files to Visual Studio 2008
+FIX - 3GPP detector extended
+FIX - IsFullFile column removed from file tree
+FIX - Detector column added to file and header tree
+
+Release 0.3.6
+=============
+FIX - Send-to (external) or save-as in HeaderTree excludes children from the selected headers
+
+Release 0.3.5
+=============
+NEW - The project data is now serialized instead of stored in a SQL-database
+NEW - Cache is filled during scan
+NEW - Proper alignment of result attributes in tree view
+NEW - You can double click in the column chooser to add/remove items
+NEW - Save data from more that one file in the file tree
+NEW - Files for which no results are found are added to the Project
+NEW - timestamp data decoding (creation and modification) of mvhd, tkhd and mdhd atoms of all 3GP video and audio tracks
+FIX - Deletion of a file in the file tree now keeps the focus at the same line
+FIX - The application now displays a message when it gets out of memory
+FIX - MPEG-1 & 2 TimeCode is now formatted as specified by the specification
+
+Release 0.3.4
+=============
+FIX- MPEG2 fix to put subsequent group of picture headers in one data block when no start header is found
+FIX - MPEG2 fix to detect Slices when no start header is found
+NEW - QuickTime code added to parse the Elementary Stream Descriptor
+
+Release 0.3.3
+=============
+FIX - Results were sorted during 'Send To' and 'Save As' command, thus undoing user editing.
+CHG - In the last release you had to create your own strong name key file. The source now contains a dummy key.
+NEW - Update to VirtualTreeList 3.10.0
+NEW - Update to NUnit 2.4.7
+
+Release 0.3.2
+=============
+KNOWN ISSUE - Out of memory exception when scanning large files (>1GB) especially created by hard disk recorders
+NEW - Old Mpeg-1 & 2 detector removed
+NEW - New Mpeg 1 & 2 detector improved
+NEW - 3GPP/QuickTime detector now has descriptive names
+NEW - Possibility to add all meaningful headers details as column to the header view, otherwise grayed out
+NEW - Detectors now present the correct format (MPEG1/MPEG2/3GPP/MPEG4)
+NEW - Video format shown with datablock
+FIX - The MPEG-2 detector made it impossible for the MPEG-4 detector to do its job
+FIX - File scanner reports -50% progress fixed
+
+Release 0.3.1
+=============
+FIX - Fixed problem with order of items when copying to workpad
+FIX - Fixed problem in 'Send To' menu
+
+Release 0.3.0
+=============
+NEW - Redesign of architecture to handle container and codec data with different plug-ins
+NEW - Old MPEG 1 & 2 plug-in replaced by MPEG 1 & 2 container and codec plug-ins
+NEW - 3GPP container plug-in
+NEW - Send headers of selected type to work pad and player
+NEW - Save All Children functionality added
+NEW - Persist used columns per detector
+FIX - Fixed drag file to Defraser Window
+
+Release 0.2.7
+=============
+FIX - Send to <player> from work pad main menu
+FIX - Delete in work pad sorts items
+FIX - Unhandled exception while scanning MPEG-4 and clicking video data block
+FIX - No GUI updates after click on video data block
+NEW - Be able to add a file without first open or create a project
+NEW - recent projects and recent files
+
+Release 0.2.6
+=============
+CHG - Changed XtraTreeList for Virtual Tree
+
+Release 0.2.5
+=============
+FIX - MPEG 4 detector
+FIX - MPEG 1-2 detector
+FIX - Header detail view
+NEW - show progress during export to XML
+NEW - show use of shift key in status bar during drag to work pad
+
+Release 0.2.4
+=============
+NEW - MPEG4 metadata added
+FIX - Cancel of scan throwed exception
+FIX - Update of header detail view when first displayed
+FIX - Installation failed on some computers
+FIX - Drag to empty workpad failed
+FIX - License text added to about box
+FIX - Project created in non existing directory failed
+
+Release 0.2.3
+=============
+NEW - MPEG4 scanner added
+FIX - 'Send to <player>' bug fixed in Workpad
+
+Release 0.2.2
+=============
+NEW - Header detail view.
+CHG - Result tree view is now filled factor 13 faster.
+CHG - Argument 'hasChildren' removed from the method SaveResult of the IResultWriter interface.
+CHG - Methods in IResultWriter interface refactored to use objects instead of database ID's.
+
+Release 0.2.1
+=============
+FIX - MPEG 1&2 plug-in: false data blocks were detected;
+FIX - MPEG 1&2 plug-in: an exception was thrown for some mpeg files when using the GUI.
+
+Release 0.2.0
+=============
+First release on Source Forge

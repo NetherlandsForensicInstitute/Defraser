@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Defraser.FFmpegConverter.FFmpegManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <AssociationLine Name="_queue" Type="Defraser.FFmpegConverter.FFmpegTask" FixedFromPoint="true">
+      <Path>
+        <Point X="1.188" Y="1.009" />
+        <Point X="1.188" Y="2.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.553" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_frameConverter" Type="Defraser.FFmpegConverter.FrameConverter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.812" Y="1.009" />
+        <Point X="1.812" Y="1.755" />
+        <Point X="4" Y="1.755" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAAAEgAAAAAAAAAAACgBACCAAAIAAgA=</HashCode>
+      <FileName>FFmpegManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_codecHeaderSource" />
+      <Field Name="_frameConverter" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_queue" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="Defraser.FFmpegConverter.FFmpegResult" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAgAAAAIAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FFmpegResult.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Defraser.FFmpegConverter.FrameConverter" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AKhAwAAUBCAAgAAQUAAAABACgAAAIAQAAQAIEAAEgAA=</HashCode>
+      <FileName>FrameConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Defraser.FFmpegConverter.FFmpegTask" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAQAAAAAAABAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>FFmpegTask.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Callback" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="Defraser.FFmpegConverter.ICodecHeaderSource" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICodecHeaderSource.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Defraser.FFmpegConverter.IFFmpegCallback" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>IFFmpegCallback.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

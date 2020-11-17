@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileInfo CreatedWith="Defraser" Version="0.5.0" User="robert" Date="vrijdag 6 maart 2009" Time="10:06:11">
+  <Container File="C:\Documents and Settings\robert\My Documents\Defraser\20081211-dev-0.4.5_Mpeg4\ROOT\testdata\Mpeg4DetectorNewResultWhenH263VopFoundAfterMpeg4GroupVop.m4v" Detector="MPEG-4 Video/H263" DetectorVersion="1.0.0" Offset="0" Length="262">
+    <Result Name="GroupOfVop" Offset="0" Length="7">
+      <Attributes>
+        <Attribute Name="StartCode" Value="0x000001B3" />
+        <Attribute Name="MarkerBit" Value="True" />
+        <Attribute Name="TimeCode" Value="0" />
+        <Attribute Name="Time" Value="00:00:00" />
+        <Attribute Name="ClosedGov" Value="True" />
+        <Attribute Name="BrokenLink" Value="False" />
+      </Attributes>
+      <Result Name="Vop" Offset="7" Length="248">
+        <Attributes>
+          <Attribute Name="StartCode" Value="0x000001B6" />
+          <Attribute Name="ShortVideoHeader" Value="False" />
+          <Attribute Name="CodingType" Value="P_VOP" />
+          <Attribute Name="ModuloTimeBase" Value="0" />
+        </Attributes>
+      </Result>
+    </Result>
+    <Result Name="GroupOfVop" Offset="255" Length="7">
+      <Attributes>
+        <Attribute Name="StartCode" Value="0x000001B3" />
+        <Attribute Name="MarkerBit" Value="True" />
+        <Attribute Name="TimeCode" Value="1" />
+        <Attribute Name="Time" Value="00:00:01" />
+        <Attribute Name="ClosedGov" Value="True" />
+        <Attribute Name="BrokenLink" Value="False" />
+      </Attributes>
+    </Result>
+  </Container>
+</FileInfo>

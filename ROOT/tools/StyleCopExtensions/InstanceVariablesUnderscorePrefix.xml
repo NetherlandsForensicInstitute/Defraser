@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--At the root level you are naming the main category for the rules in this file.-->
+<!--Important: for StyleCop to correlate your class to your metadata-->
+<!--           your class and xml file need to be named exactly the same.-->
+<SourceAnalyzer Name="SE Rules">
+	<!--Next you describe your suite of rules.-->
+	<Description>These custom SE rules provide extensions to the ones provided with StyleCop.</Description>
+	<!--Then in the Rules section you can add all the rules.-->
+	<!--Note: you can use RuleGroup element to further categorize your rules.-->
+	<Rules>
+		<!--Finally you name your rule and give it a unique CheckId.-->
+		<!--The CheckId is what you can search for your rule by in the StyleCop-->
+		<!--Project Settings.-->
+		<Rule Name="InstanceVariablesUnderscorePrefix" CheckId="SE1000">
+			<Context>Instance variables should be prefixed by underscore.</Context>
+			<Description>Instance variables are easier to distinguish when prefixed with an underscore.</Description>
+		</Rule>
+	</Rules>
+</SourceAnalyzer>

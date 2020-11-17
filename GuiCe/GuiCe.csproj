@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B0B4B90-C53E-40BD-B782-6ECB631D909C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Defraser.GuiCe</RootNamespace>
+    <AssemblyName>Defraser</AssemblyName>
+    <ApplicationIcon>defraser.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>Defraser.GuiCe.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AboutBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\AboutBox\AboutBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=1.4.3.536, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Common, Version=3.14.0.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\Infralution\Infralution.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls, Version=3.14.0.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\Infralution\Infralution.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infralution.Controls.VirtualTree, Version=3.14.0.0, Culture=neutral, PublicKeyToken=3e7e8e3744a5c13f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\Infralution\Infralution.Controls.VirtualTree.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.1.24483, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\WinFormsUI\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFile.Designer.cs">
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackgroundWorkerProgressReporter.cs" />
+    <Compile Include="BindableToolStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BindingExtensions.cs" />
+    <Compile Include="CustomFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomFlowLayoutPanel.Designer.cs">
+      <DependentUpon>CustomFlowLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsBase.cs" />
+    <Compile Include="BackgroundFileScanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BackgroundFileScanner.Designer.cs">
+      <DependentUpon>BackgroundFileScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackgroundDataBlockScanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BackgroundDataBlockScanner.Designer.cs">
+      <DependentUpon>BackgroundDataBlockScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnChooser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnChooser.Designer.cs">
+      <DependentUpon>ColumnChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBlockStatistics.cs" />
+    <Compile Include="DetectorSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetectorSelector.Designer.cs">
+      <DependentUpon>DetectorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditReferenceHeaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditReferenceHeaderForm.Designer.cs">
+      <DependentUpon>EditReferenceHeaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExceptionHandling.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="FileDetails.cs" />
+    <Compile Include="FileAndStreamDetailsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileAndStreamDetailsWindow.Designer.cs">
+      <DependentUpon>FileAndStreamDetailsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileExportEventArgs.cs" />
+    <Compile Include="FileExportProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileExportProgressForm.Designer.cs">
+      <DependentUpon>FileExportProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileTree.Designer.cs">
+      <DependentUpon>FileTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileTreeObject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileTreeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileTreeWindow.Designer.cs">
+      <DependentUpon>FileTreeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FullFileScanner.cs" />
+    <Compile Include="GuiCeModule.cs" />
+    <Compile Include="HeaderDetailWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderDetailWindow.Designer.cs">
+      <DependentUpon>HeaderDetailWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderPanelWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderPanelWindow.Designer.cs">
+      <DependentUpon>HeaderPanelWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultCodecHeaderManager.cs" />
+    <Compile Include="HexWorkshopEventArgs.cs" />
+    <Compile Include="IBitmapThumbTarget.cs" />
+    <Compile Include="IFormFactory.cs" />
+    <Compile Include="IFragmentExtensions.cs" />
+    <Compile Include="IHeaderDetailSource.cs" />
+    <Compile Include="ReferenceHeaderDatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferenceHeaderDatabaseForm.Designer.cs">
+      <DependentUpon>ReferenceHeaderDatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceHeaderGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReferenceHeaderGridView.Designer.cs">
+      <DependentUpon>ReferenceHeaderGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDefaultHeadersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDefaultHeadersForm.Designer.cs">
+      <DependentUpon>SelectDefaultHeadersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendtolist\AddSendToItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendtolist\AddSendToItemForm.Designer.cs">
+      <DependentUpon>AddSendToItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendtolist\ParametersChecker.cs" />
+    <Compile Include="sendtolist\EditSendToItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendtolist\EditSendToItemForm.Designer.cs">
+      <DependentUpon>EditSendToItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendtolist\InvalidSendToItem.cs" />
+    <Compile Include="sendtolist\ISendToItem.cs" />
+    <Compile Include="sendtolist\ISendToListMemento.cs" />
+    <Compile Include="sendtolist\ISendToPlayer.cs" />
+    <Compile Include="sendtolist\PathValidatingSendToItem.cs" />
+    <Compile Include="sendtolist\SendToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendtolist\SendToForm.Designer.cs">
+      <DependentUpon>SendToForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendtolist\SendToHexWorkshop.cs" />
+    <Compile Include="sendtolist\SendToPlayer.cs" />
+    <Compile Include="sendtolist\SendToItemFactory.cs" />
+    <Compile Include="sendtolist\SendToList.cs" />
+    <Compile Include="sendtolist\SendToProgressReporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sendtolist\SendToProgressReporter.Designer.cs">
+      <DependentUpon>SendToProgressReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\sourceinfo\CodecStreamContainerInfo.cs" />
+    <Compile Include="Resources\sourceinfo\FileSourceInfo.cs" />
+    <Compile Include="Resources\sourceinfo\IRichTextView.cs" />
+    <Compile Include="Resources\sourceinfo\ISourceInfoCell.cs" />
+    <Compile Include="IThumbsControlContainer.cs" />
+    <Compile Include="NullDetails.cs" />
+    <Compile Include="FileDetailTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileDetailTree.Designer.cs">
+      <DependentUpon>FileDetailTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISelection.cs" />
+    <Compile Include="HeaderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HeaderPanel.Designer.cs">
+      <DependentUpon>HeaderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedDetectorConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedDetectorConfiguration.Designer.cs">
+      <DependentUpon>AdvancedDetectorConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramePreviewWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FramePreviewWindow.Designer.cs">
+      <DependentUpon>FramePreviewWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramePreviewManager.cs" />
+    <Compile Include="ProjectKeyframeOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectKeyframeOverview.Designer.cs">
+      <DependentUpon>ProjectKeyframeOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectKeyframeOverviewRow.cs">
+    </Compile>
+    <Compile Include="ProjectKeyframeOverviewTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectKeyframeOverviewTree.Designer.cs">
+      <DependentUpon>ProjectKeyframeOverviewTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDefaultCodecHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDefaultCodecHeader.Designer.cs">
+      <DependentUpon>EditDefaultCodecHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveFilePresenter.cs" />
+    <Compile Include="SearchHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchHeader.Designer.cs">
+      <DependentUpon>SearchHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectingKeyframe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectingKeyframe.Designer.cs">
+      <DependentUpon>SelectingKeyframe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultColumnIndex.cs" />
+    <Compile Include="HeaderDetailTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HeaderDetailTree.Designer.cs">
+      <DependentUpon>HeaderDetailTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortResults.cs" />
+    <Compile Include="Resources\sourceinfo\MeasuringRichTextView.cs" />
+    <Compile Include="Resources\sourceinfo\RichtTextPainter.cs" />
+    <Compile Include="Resources\sourceinfo\SourceInfoCellWidget.cs" />
+    <Compile Include="Resources\sourceinfo\ISourceInfo.cs" />
+    <Compile Include="Resources\sourceinfo\SourceInfoPresenter.cs" />
+    <Compile Include="Resources\sourceinfo\UnknownContainerInfo.cs" />
+    <Compile Include="ThumbCellWidget.cs" />
+    <Compile Include="ThumbUtil.cs" />
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThumbControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThumbControl.Designer.cs">
+      <DependentUpon>ThumbControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tree.Designer.cs">
+      <DependentUpon>Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoKeyframesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoKeyframesWindow.Designer.cs">
+      <DependentUpon>VideoKeyframesWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoKeyframesManager.cs" />
+    <Compile Include="VirtualTreeExtensions.cs" />
+    <Compile Include="Workpad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workpad.Designer.cs">
+      <DependentUpon>Workpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuiCeEventArgs.cs" />
+    <Compile Include="GuiCeException.cs" />
+    <Compile Include="OpenOrCreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenOrCreateProject.Designer.cs">
+      <DependentUpon>OpenOrCreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectProperties.Designer.cs">
+      <DependentUpon>ProjectProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewProjectForm.Designer.cs">
+      <DependentUpon>CreateNewProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameForm.designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackgroundFileScanner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BackgroundFileScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColumnChooser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColumnChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetectorSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetectorSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenOrCreateProject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpenOrCreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancedDetectorConfiguration.resx">
+      <DependentUpon>AdvancedDetectorConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProjectProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewProjectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateNewProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderDetailTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderDetailTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HeaderTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workpad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Workpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="TabKeyCatcher.cs" />
+    <Compile Include="TempFile.cs" />
+    <Compile Include="HeaderTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HeaderTree.Designer.cs">
+      <DependentUpon>HeaderTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkpadManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ROOT\build\license.txt">
+      <Link>license.txt</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditReferenceHeaderForm.resx">
+      <DependentUpon>EditReferenceHeaderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileAndStreamDetailsWindow.resx">
+      <DependentUpon>FileAndStreamDetailsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileExportProgressForm.resx">
+      <DependentUpon>FileExportProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileTree.resx">
+      <DependentUpon>FileTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileTreeWindow.resx">
+      <DependentUpon>FileTreeWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderDetailWindow.resx">
+      <DependentUpon>HeaderDetailWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramePreviewWindow.resx">
+      <DependentUpon>FramePreviewWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderPanelWindow.resx">
+      <DependentUpon>HeaderPanelWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDefaultCodecHeader.resx">
+      <DependentUpon>EditDefaultCodecHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectKeyframeOverview.resx">
+      <DependentUpon>ProjectKeyframeOverview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceHeaderDatabaseForm.resx">
+      <DependentUpon>ReferenceHeaderDatabaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceHeaderGridView.resx">
+      <DependentUpon>ReferenceHeaderGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchHeader.resx">
+      <DependentUpon>SearchHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDefaultHeadersForm.resx">
+      <DependentUpon>SelectDefaultHeadersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectingKeyframe.resx">
+      <DependentUpon>SelectingKeyframe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendtolist\AddSendToItemForm.resx">
+      <DependentUpon>AddSendToItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendtolist\SendToForm.resx">
+      <DependentUpon>SendToForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendtolist\SendToProgressReporter.resx">
+      <DependentUpon>SendToProgressReporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThumbControl.resx">
+      <DependentUpon>ThumbControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tree.resx">
+      <DependentUpon>Tree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VideoKeyframesWindow.resx">
+      <DependentUpon>VideoKeyframesWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Content Include="defraser.ico" />
+    <Content Include="Resources\action_go.png" />
+    <Content Include="Resources\application_side_tree.png" />
+    <Content Include="Resources\application_split.png" />
+    <Content Include="Resources\column_edit.png" />
+    <None Include="Resources\database_table.png" />
+    <Content Include="Resources\decode_failed.png" />
+    <None Include="DefaultCodecHeaderClassDiagram.cd" />
+    <None Include="Resources\decoding_failed.png" />
+    <Content Include="Resources\edit_default_codec_header.png" />
+    <Content Include="Resources\file.png" />
+    <Content Include="Resources\file_add.png" />
+    <Content Include="Resources\file_delete.png" />
+    <Content Include="Resources\film.png" />
+    <Content Include="Resources\film_add.png" />
+    <Content Include="Resources\film_delete.png" />
+    <Content Include="Resources\film_edit.png" />
+    <Content Include="Resources\film_save.png" />
+    <Content Include="Resources\invalid.png" />
+    <Content Include="Resources\page_white_quest.png" />
+    <Content Include="Resources\page_white_quest_add.png" />
+    <Content Include="Resources\page_white_quest_del.png" />
+    <None Include="Resources\page_white_text.png" />
+    <Content Include="Resources\plugin.png" />
+    <Content Include="Resources\project_keyframes_overview.png" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\thumbs_window.ico" />
+    <Content Include="Resources\valid.png" />
+    <Content Include="uninstall_defraser.ico" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{FFFCB9C7-B032-4C80-AB5E-497D30CE7D20}</Project>
+      <Name>DataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FFmpegConverter\FFmpegConverter.csproj">
+      <Project>{2CADA07A-C477-4F9F-A9D9-0C518AA16A19}</Project>
+      <Name>FFmpegConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{889BA7E9-FDF1-404F-A0B7-DE1ABDEB137F}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\Interface.csproj">
+      <Project>{AA32C79B-875C-45D3-AF33-7B3CBDA82A93}</Project>
+      <Name>Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{A7D53AEE-D37F-4EEE-8776-13108BB9D53F}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\ROOT\tools\StyleCop\v4.3\Microsoft.StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy /y "$(SolutionDir)ROOT\build\license.txt" "$(TargetDir)"
+copy /y "$(SolutionDir)ROOT\library\ffmpeg\ffmpeg*.dll" "$(TargetDir)"</PostBuildEvent>
+    <PreBuildEvent>copy /y "$(SolutionDir)ROOT\Key\DefraserDummy.snk" "$(SolutionDir)ROOT\Key\Defraser.snk"
+if exist "$(SolutionDir)ROOT\Key\DefraserSecret.snk" copy /y "$(SolutionDir)ROOT\Key\DefraserSecret.snk" "$(SolutionDir)ROOT\Key\Defraser.snk"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

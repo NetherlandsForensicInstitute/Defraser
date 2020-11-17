@@ -1,0 +1,6 @@
+If you want to build an installer select it in Build -> Configuration Manager
+
+Set the Solution configuration to 'Release'.
+Build -> Build Installer
+The installer will be copied to ROOT/output.
+

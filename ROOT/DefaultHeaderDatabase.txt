@@ -1,0 +1,30 @@
+- 1 groot database bestand met headers (byte content) en metadata
+- Project file (data blocks) bevatten default header BYTES! (niet verwijzing naar database)
+  - Per formaat (NIET PER DETECTOR!)
+
+  [deze kolommen zijn door de gebruiker in te voeren en aan te passen]
+  - 'Device' : 'iPhone 5'
+  - 'Setting': 'Normal mode'
+  - 'Description': 'Firmware 1.0-crazycow-a3'
+
+  [overige kolommen worden bepaald uit de content]  
+  - 'Width': 640
+  - 'Height': 480
+  - 0 of meer formaat-specifieke standaardkolommen en column chooser (gebaseerd op gescande data, 'IResults')
+  - 'Hex': '000001b3c50304'   (content van de header)
+
+  
+- In de project.xml file opslaan:
+  - Een kopie van een database 'regel', de header content (bytes) en door de gebruiker ingevoerde metadata
+  - Bij het schrijven van een 'Forensic Integrity Log' wordt de default header, inclusief beschrijving, genoemd.
+
+
+- PROBLEEM: H.264 met 1 Sequence Parameter Set en meer dan 1 Picture Parameter Set !!  Hoe weergeven!?
+ 
+ 
+- In 'Add File' dialoog, extra blok 'Default Header' (onder 'Codec Detector')
+  (lekker eenvoudig!)
+  - hier selecteren (met checkboxes) welke van de default headers uit de database actief zijn
+ 
+ 
+(zie mailtje Rikkert van 7 maart)

@@ -1,0 +1,73 @@
+			 * C:\DATA\projects\defraser\defraserStuff\JM\bin>lencod -d encoder_Sp_Si.cfg
+			 * 
+			 * ..many config file parsing errors..
+			 * 
+			 *------------------------------- JM 18.1 (FRExt) -------------------------------
+ Input YUV file                    : foreman_part_qcif.yuv
+ Output H.264 bitstream            : foreman.264
+ Output YUV file                   : foreman_rec.yuv
+ YUV Format                        : YUV 4:2:0
+ Frames to be encoded              : 5
+ Freq. for encoded bitstream       : 15.00
+ PicInterlace / MbInterlace        : 0/0
+ Transform8x8Mode                  : 0
+ ME Metric for Refinement Level 0  : SAD
+ ME Metric for Refinement Level 1  : SAD
+ ME Metric for Refinement Level 2  : Hadamard SAD
+ Mode Decision Metric              : Hadamard SAD
+ Motion Estimation for components  : Y
+ Image format                      : 176x144 (176x144)
+ Error robustness                  : Off
+ Search range                      : 16
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
+ Sequence type                     : I-B-P-B-P (QP: I 38, P 38, B 38)
+ Entropy coding method             : CAVLC
+ Profile/Level IDC                 : (88,30)
+ Motion Estimation Scheme          : Fast Full Search
+ Search range restrictions         : none
+ RD-optimized mode decision        : used
+ Data Partitioning Mode            : 1 partition
+ Output File Format                : H.264/AVC Annex B Byte Stream Format
+-------------------------------------------------------------------------------
+Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref
+
+-------------------------------------------------------------------------------
+00000(NVB)     168
+00000(IDR)    8632   38  30.853  38.122  38.762       424       0    FRM    3
+read_one_frame: cannot read 176 bytes from input file, unexpected EOF!
+
+Incorrect FramesToBeEncoded: actual number is      3 frames!
+00002( B )    1688   38  29.030  37.646  38.173      4378    3839    FRM    0
+-------------------------------------------------------------------------------
+ Total Frames:  2
+ Leaky BucketRateFile does not have valid entries.
+ Using rate calculated from avg. rate
+ Number Leaky Buckets: 8
+     Rmin     Bmin     Fmin
+    77400     8632     8632
+    96750     8632     8632
+   116100     8632     8632
+   135450     8632     8632
+   154800     8632     8632
+   174150     8632     8632
+   193500     8632     8632
+   212850     8632     8632
+------------------ Average data all frames  -----------------------------------
+
+ Total encoding time for the seq.  :   4.802 sec (0.42 fps)
+ Total ME time for sequence        :   3.839 sec
+
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  29.941,  29.846,  67.36922 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  37.884,  37.878,  10.60038 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  38.467,  38.457,   9.27541 }
+
+ Total bits                        : 10488 (I 8632, P 0, B 1688 NVB 168)
+ Bit rate (kbit/s)  @ 15.00 Hz     : 78.66
+ Bits to avoid Startcode Emulation : 0
+ Bits for parameter sets           : 168
+ Bits for filler data              : 0
+
+-------------------------------------------------------------------------------
+Exit JM 18 (FRExt) encoder ver 18.1 

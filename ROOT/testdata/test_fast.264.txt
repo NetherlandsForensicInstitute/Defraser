@@ -1,0 +1,91 @@
+			 * C:\DATA\projects\defraser\defraserStuff\JM\bin>lencod -d encoder_fast.01.cfg
+Setting Default Parameters...
+Parsing Configfile encoder_fast.01.cfg..........................................
+................................................................................
+................................................................................
+................................................................................
+................................................................................
+..............................
+
+
+Warning: Hierarchical coding or Referenced B slices used.
+         Make sure that you have allocated enough references
+         in reference buffer to achieve best performance.
+------------------------------- JM 18.1 (FRExt) -------------------------------
+ Input YUV file                    : foreman_part_qcif.yuv
+ Output H.264 bitstream            : test.264
+ Output YUV file                   : test_rec.yuv
+ YUV Format                        : YUV 4:2:0
+ Frames to be encoded              : 30
+ Freq. for encoded bitstream       : 30.00
+ PicInterlace / MbInterlace        : 0/0
+ Transform8x8Mode                  : 1
+ ME Metric for Refinement Level 0  : SAD
+ ME Metric for Refinement Level 1  : Hadamard SAD
+ ME Metric for Refinement Level 2  : Hadamard SAD
+ Mode Decision Metric              : Hadamard SAD
+ Motion Estimation for components  : Y
+ Image format                      : 176x144 (176x144)
+ Error robustness                  : Off
+ Search range                      : 32
+ Total number of references        : 5
+ References for P slices           : 5
+ References for B slices (L0, L1)  : 5, 1
+ Sequence type                     : Hierarchy (QP: I 28, P 28, B 30)
+ Entropy coding method             : CABAC
+ Profile/Level IDC                 : (100,40)
+ Motion Estimation Scheme          : EPZS
+ EPZS Pattern                      : Extended Diamond
+ EPZS Dual Pattern                 : Extended Diamond
+ EPZS Fixed Predictors             : All P + B
+ EPZS Temporal Predictors          : Enabled
+ EPZS Spatial Predictors           : Enabled
+ EPZS Threshold Multipliers        : (1 0 2)
+ EPZS Subpel ME                    : Basic
+ EPZS Subpel ME BiPred             : Basic
+ Search range restrictions         : none
+ RD-optimized mode decision        : used
+ Data Partitioning Mode            : 1 partition
+ Output File Format                : H.264/AVC Annex B Byte Stream Format
+-------------------------------------------------------------------------------
+Frame     Bit/pic    QP   SnrY    SnrU    SnrV    Time(ms) MET(ms) Frm/Fld Ref
+
+-------------------------------------------------------------------------------
+00000(NVB)     320
+00000(IDR)   21528   28  37.701  41.571  43.231       446       0    FRM    3
+read_one_frame: cannot read 176 bytes from input file, unexpected EOF!
+
+Incorrect FramesToBeEncoded: actual number is      3 frames!
+00002( B )    4968   31  35.610  40.705  42.303      1758    1029    FRM    1
+00001( B )    1952   32  35.625  41.073  42.614      1772    1161    FRM    0
+-------------------------------------------------------------------------------
+ Total Frames:  3
+ Leaky BucketRateFile does not have valid entries.
+ Using rate calculated from avg. rate
+ Number Leaky Buckets: 8
+     Rmin     Bmin     Fmin
+   284460    21528    21528
+   355560    21528    21528
+   426660    21528    21528
+   497760    21528    21528
+   568860    21528    21528
+   639960    21528    21528
+   711060    21528    21528
+   782160    21528    21528
+------------------ Average data all frames  -----------------------------------
+
+ Total encoding time for the seq.  :   3.977 sec (0.75 fps)
+ Total ME time for sequence        :   2.191 sec
+
+ Y { PSNR (dB), cSNR (dB), MSE }   : {  36.312,  36.207,  15.57200 }
+ U { PSNR (dB), cSNR (dB), MSE }   : {  41.116,  41.102,   5.04572 }
+ V { PSNR (dB), cSNR (dB), MSE }   : {  42.716,  42.699,   3.49253 }
+
+ Total bits                        : 28768 (I 21528, P 0, B 6920 NVB 320)
+ Bit rate (kbit/s)  @ 30.00 Hz     : 287.68
+ Bits to avoid Startcode Emulation : 22
+ Bits for parameter sets           : 320
+ Bits for filler data              : 0
+
+-------------------------------------------------------------------------------
+Exit JM 18 (FRExt) encoder ver 18.1

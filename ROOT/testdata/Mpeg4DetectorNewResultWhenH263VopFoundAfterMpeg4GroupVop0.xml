@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileInfo CreatedWith="Defraser" Version="0.4.2" User="robert" Date="dinsdag 2 september 2008" Time="9:35:20">
+  <Container File="C:\Documents and Settings\robert\My Documents\Defraser\20080808-dev-0.4.2_issue2425_FixShortHeader\ROOT\testdata\Mpeg4DetectorNewResultWhenH263VopFoundAfterMpeg4GroupVop.m4v" Detector="MPEG-4" DetectorVersion="1.0.1" Offset="0" Length="262">
+    <Result Name="GroupVOP" Offset="0" Length="7">
+      <Attributes>
+        <Attribute Name="TimeCode" Value="0" />
+        <Attribute Name="ClosedGov" Value="True" />
+        <Attribute Name="BrokenLink" Value="False" />
+      </Attributes>
+      <Result Name="VOP" Offset="7" Length="248">
+        <Attributes>
+          <Attribute Name="ID" Value="0" />
+          <Attribute Name="CodingType" Value="P_VOP" />
+          <Attribute Name="TimeIncrement" Value="0" />
+          <Attribute Name="ModuloTimeBase" Value="0" />
+          <Attribute Name="ShortVideoHeader" Value="False" />
+        </Attributes>
+      </Result>
+    </Result>
+    <Result Name="GroupVOP" Offset="255" Length="7">
+      <Attributes>
+        <Attribute Name="TimeCode" Value="1" />
+        <Attribute Name="ClosedGov" Value="True" />
+        <Attribute Name="BrokenLink" Value="False" />
+      </Attributes>
+    </Result>
+  </Container>
+</FileInfo>

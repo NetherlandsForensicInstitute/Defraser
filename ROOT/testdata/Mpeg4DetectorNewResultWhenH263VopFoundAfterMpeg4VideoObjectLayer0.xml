@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileInfo CreatedWith="Defraser" Version="0.4.2" User="robert" Date="maandag 1 september 2008" Time="17:10:01">
+  <Container File="C:\Documents and Settings\robert\My Documents\My Videos\Testdata\Mpeg4DetectorNewResultWhenH263VopFoundAfterMpeg4VideoObjectLayer.m4v" Detector="MPEG-4" DetectorVersion="1.0.1" Offset="0" Length="32">
+    <Result Name="VisualObjectSequenceStart" Offset="0" Length="5">
+      <Attributes>
+        <Attribute Name="ProfileLevelIndication" Value="8" />
+      </Attributes>
+      <Result Name="VisualObject" Offset="5" Length="9">
+        <Attributes>
+          <Attribute Name="Type" Value="VIDEO" />
+          <Attribute Name="Priority" Value="0" />
+          <Attribute Name="Identifier" Value="0" />
+          <Attribute Name="VersionID" Value="1" />
+        </Attributes>
+        <Result Name="VideoObject" Offset="14" Length="4">
+          <Result Name="VideoObjectLayer" Offset="18" Length="14">
+            <Attributes>
+              <Attribute Name="ID" Value="0" />
+              <Attribute Name="ShortVideoHeader" Value="0" />
+              <Attribute Name="Shape" Value="SHAPE_RECTANGULAR" />
+              <Attribute Name="ShapeExtension" Value="13" />
+              <Attribute Name="TypeIndication" Value="1" />
+              <Attribute Name="Scalability" Value="0" />
+              <Attribute Name="DataPartioned" Value="False" />
+              <Attribute Name="ObmcDisable" Value="1" />
+              <Attribute Name="ResyncMarkerDisable" Value="True" />
+              <Attribute Name="ReversibleVlc" Value="0" />
+              <Attribute Name="NewPredEnable" Value="False" />
+              <Attribute Name="SADctDisable" Value="0" />
+              <Attribute Name="VopTimeIncrementResolution" Value="1000" />
+              <Attribute Name="FixedVopRate" Value="10" />
+              <Attribute Name="FixedVopTimeIncrement" Value="0" />
+              <Attribute Name="Width" Value="176" />
+              <Attribute Name="Height" Value="144" />
+              <Attribute Name="SpriteEnable" Value="0" />
+              <Attribute Name="SpriteWidth" Value="0" />
+              <Attribute Name="SpriteHeight" Value="0" />
+              <Attribute Name="EnhancementType" Value="False" />
+            </Attributes>
+          </Result>
+        </Result>
+      </Result>
+    </Result>
+  </Container>
+</FileInfo>

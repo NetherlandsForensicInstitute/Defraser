@@ -1,0 +1,4 @@
+log4net
+=======
+
+'Version': log4net-1.2.10\bin\net\2.0\release

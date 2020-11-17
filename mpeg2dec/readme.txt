@@ -1,0 +1,1 @@
+This code is used as a reference during MPEG-1/2 Slice implementation. It must be compiled and executed on a Unix/Linux machine. To compare the results, switch Visual Studio to Debug mode and enable the Log.Info lines.

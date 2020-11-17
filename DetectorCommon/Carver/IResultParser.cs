@@ -1,0 +1,56 @@
+﻿/*
+ * Copyright (c) 2006-2020, Netherlands Forensic Institute
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. Neither the name of the Netherlands Forensic Institute nor the names 
+ *    of its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ */
+
+using Defraser.Detector.Common;
+
+namespace Defraser.Detector.Common.Carver
+{
+	/// <summary>
+	/// Parses a header or entire bit stream by reading from a specialized
+	/// <see cref="IReader"/> and creating metadata that represents the results.
+	/// </summary>
+	/// <typeparam name="TReader">the type of reader used for parsing</typeparam>
+	public interface IResultParser<TReader>
+		where TReader : IReader
+	{
+		/// <summary>
+		/// Parses (one or more) header(s).
+		/// This reads data from <paramref name="reader"/> that is expected to
+		/// be in a format compatible with this parser and creates attributes and
+		/// headers to represent the metadata.
+		/// </summary>
+		/// <remarks>
+		/// Attributes are automatically created by <paramref name="reader"/>,
+		/// which might skip attribute creation during initial carving.
+		/// </remarks>
+		/// <param name="reader">the reader used for parsing</param>
+		/// <param name="state">The reader state</param>
+		void Parse(TReader reader, IResultNodeState state);
+	}
+}

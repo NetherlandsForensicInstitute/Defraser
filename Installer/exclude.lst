@@ -1,0 +1,25 @@
+*/bin/*
+*/obj/*
+*/.svn/*
+*.suo
+.svn/*
+./*resharper*
+Defraser Developers Manual.doc
+GuiCe/Properties/licenses.licx
+GuiCe/GuiCe_.csproj
+Defraser_.sln
+Installer/Debug/*
+Installer/Release/*
+ROOT/docs/*
+ROOT/key/DefraserSecret.snk
+ROOT/key/Defraser.snk
+ROOT/output/*
+ROOT/testdata/*
+CompareOutputDefraserWithPythonScript/*
+DetectorTemplate/*
+mpeg2dec/*
+ExampleDetector/*
+H264Detector/*
+Test/*
+Installer/*
+Installer-x64/*

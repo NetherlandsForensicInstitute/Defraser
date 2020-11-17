@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="NameColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ProgramColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ParametersColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Usage:
+In this screen, the contents of the ‘Send Selection To’ context menu can be configured. The ‘Send Selection To’ functionality (right-mouse-click on header selection) allows custom commands to be executed on any headers you have selected. External programs can be called with your own custom parameters, as well as basic parameters derived from the metadata of the selected headers.
+ 
+Available derived parameters:
+- [DAT]	= Full Path to File with Selected Headers (automatically saved in temp folder)
+- [LOG]	= Full Path to Log File (automatically saved in temp folder)
+- [SRC]	= Full Path to the Source File (only works when saving a selection from a single source file)
+- [COUNT]= Total number of Selected Headers   
+- [OFFS]	= Offset of the Start of the Selection in the Source File
+- [OFFE]	= Offset of the End of the Selection in the Source File    
+- [SIZES]	= Size of the Source File    
+- [SIZEH]	= Size of the First Header in the Selection    
+- [SIZET]	= Total Size of the Selected Headers    
+- [LISTS]	= List of Sizes of each Selected Header. Values are separated by spaces. So, this will be formatted as SIZE1 SIZE2 etc.
+- [LISTO]	= List of Offsets (in Source File) and sizes of each selected header. Values are separated by spaces. So, this will be formatted as OFFSET1 SIZE1 OFFSET2 SIZE2 etc.    
+- [DET]	= Name of the Relevant Detector:
+	       "AVI/RIFF"		= AVI/RIFF
+	       "ASF/WMV"		= ASF/WMV container
+	       "3GPP/QT/MP4"	= 3GPP/QT/MP4/MOV container
+	       "MPEG-1/2 Systems"	= MPEG-1/2 Systems container
+	       "MPEG-1/2 Video"   	= MPEG-1/2 Video codec
+	       "MPEG-4 Video/H.263"	= MPEG-4 Video/H.263 codec
+	       "H.264"              	= H.264 codec
+	       "Unknown"		= Unknown format
+
+Notes:
+- Any parameters referring to a Source File should only be used when all selected headers have the same source. Using these parameters with selections in Workpads containing headers from multiple source files may yield unpredictable results.
+- When using the [DAT] parameter, your selection is automatically saved to a temporary file. The parameter itself holds the full path to the temporary file.
+- When using the [LOG] parameter, a Forensic Integrity Log file describing your selection is automatically saved to a temporary file. The parameter itself holds the full path to the temporary file.
+- The maximum command line string length on Windows systems is 8191 characters. When using [LISTS] or [LISTO] on a large selection of headers, this limit is easily exceeded. A more robust option for obtaining offset and size information on large selections, is to use the [LOG] parameter and have your tool parse the resulting comma-separated file.
+ 
+Examples:
+- Save selected headers to a temp file and send this to Windows Media Player for playback:
+          C:\Program Files\Windows Media Player\wmplayer.exe [DAT]
+- Save log of selection to a temp file and send custom command line parameters containing the source file path and the relevant detector name to some external program:
+          C:\MyTools\MyTools.exe -g [LOG] -s [SRC] -d [DET]</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAAAAAACACoCAAAJgAAABAQAAAAAAgAaAUAAM4IAAAoAAAAIAAAAEAAAAABAAgAAAAAAAAE
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAAIAAAAEAAAAAAIAAAICAAIAAAACAgAAAgQAAAIAAgACAgIAAgQ
+        CAAQAAAAEAgAABAACAAQCAgAEBAIABgAAAAhAAAAGAgAABgICAAhCAAAKQgAADEIAAAYEAgAEBgIABgY
+        AAAxEAAAMRUFADkQAAA5KQAAORAIADkYCAAAABAAAAgQAAAAGAAAACEAAAghAAgIEAAIEBAACBgYABAA
+        EAAQABgAEAgQABAIGAAQEBAAEBghABgQEAAgFBQAISEIABQhGAAlIAwAISEYACkhGAAxIQgAMSEQADkh
+        CAAYGCEAFCElACYjHgApKyEALSkpADExKQAtNTMAMTk5AEYgBgBDIAwAOSEQAEUtHwBpNxYAYTokAIQ5
+        EAB4NiMAbkIRAGtGHAB7QhgAf0oQAGRCKQBzQiEAeEImAG1RLwCMMRgAhDkYAIw5GACEQhgAjEIQAIxC
+        GACIShgAhFIYAIwxIQCIOSEAhEIhAIxKHACESiEAiU8hAIRGKQCGRTEAlTUdAJRCGACUShgAnEoYAJg/
+        KQCUSiEAlEopAJRKMQCcUhgAmU8hAKROIAClSikAj1MsAJ5SLwCtTi0Ap1A1AJxaKgClWjEArVolAK1j
+        KQCWYDMAmWA5AKVeNQClYzkAtVopAK1aMQC1WjEAsWMxAL1jMQCtWjkAtVo5AK1jOQBQT1AAb2VgAJdi
+        RACKeXEArWs5AKlnQgCpZUgApXNXALVjOQC1Zz0AtWtCALVzQgC1a0oAr3BMAK5xVQCtgGgAwHFJALlz
+        UgC5e1IAxnNSALlzWgC9e1oAxntSALWEUgC9c2MAtXtjAL17YwC5hlwAuX9pAL2MYwC5h24AuYx3AMYA
+        vQDGAMYAxgi9AMYIxgDGEL0AxhDGAMYYtQDGGL0AxiW5AMopvQDOMbUAzjm1AM4xvQDOOb0AzjHGAM4p
+        zgDGd14AxntjAMaEWgDGhGMAxntrAM6EWgDGjFoAxoxjAMaEawDOhGsAxoxrAMtziQDKSq0A0U6/ANBt
+        oADZeLkAyJNhAMqUawDOjHMAyJxtALqWeADGlHsAzpRzAM6ccwCYlo4AnaCfAMCahQC7p5oAzpR7AM6g
+        ewDOkIgAzqSOANaUcgDboXwA2pyIANunhAAfdvoA1qSVAN6vjADbsJYA26ejAN61pQDkupwA3rmpAN7D
+        qQDnxqUA8MCkAOfGrQDZp70A1MPCAODIvwDxxsAA4s6xAO/OrwDczsgA8c67AOPWxwD11MQA/9a6APze
+        ywDf29sA5ufnAPrg2AD16esA/PHZAP/z5wD48+8A///rAO/39wD37/cA/+/3APv39wDv8/8A9/f/AP/3
+        /wDv//8A9//3APf//wD///cA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAACQkAAAAAAAAAAAAACQA6AAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAACQAAAAAAAAAAAAAACQkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1AAAAAAAAAAA
+        ANTU1NQAAAAAAAAAAAAAAAAAAAAAANTU1AAAAAAAAADU1NTU1NQAAAAAAAAAAAAAAAAAAAAAANTU1AAA
+        AAAA1NQAAAAA1NQAAAAAAAAAAAAAAAAAAAAAANTU1AAAAADU1AAAAADU1AAAAAAAAAAAAAAAAAAAAAAA
+        ANTU1AAAANTU1NTU1NQAAAAAAAAAAAAAAAAAAAAAAAAAANTU1AAA1NTU1NTUAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAANTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1NTU1NTUAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAADU1NTU1NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1NTU1AAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADU1NQAANTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAA1NTUAAAA1NTU1NTU1AAA
+        AAAAAAAAAAAAAAAAAAAAANTU1AAAAADU1AAAAADU1AAAAAAAAAAAAAAAAAAAAADU1NQAAAAAANTUAAAA
+        ANTUAAAAAAAAAAAAAAAAAAAA1NTUAAAAAAAAANTU1NTU1AAAAAAAAAAAAAAAAAAAANTU1AAAAAAAAAAA
+        ANTU1NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGFhhhhhAAAAAAAAAAD+f////n////5j
+        /h/+cfwP/nj55/58eef+fjgP/n8YH/5/gf/+f4H//n+B//5/gf/+fxgf/n44D/58eef+ePnn/nH8D/5j
+        /h/+f////n///wAAAAAAAAAAYYYYYWGGGGEAAAAAAAAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAA
+        AAAAAAAAAAEAAAABAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAMDcwADwyqYABAQEAAgI
+        CAAMDAwAERERABYWFgAcHBwAIiIiACkpKQBVVVUATU1NAEJCQgA5OTkAgHz/AFBQ/wCTANYA/+zMAMbW
+        7wDW5+cAkKmtAAAAMwAAAGYAAACZAAAAzAAAMwAAADMzAAAzZgAAM5kAADPMAAAz/wAAZgAAAGYzAABm
+        ZgAAZpkAAGbMAABm/wAAmQAAAJkzAACZZgAAmZkAAJnMAACZ/wAAzAAAAMwzAADMZgAAzJkAAMzMAADM
+        /wAA/2YAAP+ZAAD/zAAzAAAAMwAzADMAZgAzAJkAMwDMADMA/wAzMwAAMzMzADMzZgAzM5kAMzPMADMz
+        /wAzZgAAM2YzADNmZgAzZpkAM2bMADNm/wAzmQAAM5kzADOZZgAzmZkAM5nMADOZ/wAzzAAAM8wzADPM
+        ZgAzzJkAM8zMADPM/wAz/zMAM/9mADP/mQAz/8wAM///AGYAAABmADMAZgBmAGYAmQBmAMwAZgD/AB92
+        +gBmMzMAZjNmAGYzmQBmM8wAZjP/AGZmAABmZjMAZmZmAGZmmQBmZswAZpkAAGaZMwBmmWYAZpmZAGaZ
+        zABmmf8AZswAAGbMMwBmzJkAZszMAGbM/wBm/wAAZv8zAGb/mQBm/8wAzAD/AP8AzACZmQAAmTOZAJkA
+        mQCZAMwAmQAAAJkzMwCZAGYAmTPMAJkA/wCZZgAAmWYzAJkzZgCZZpkAmWbMAJkz/wCZmTMAmZlmAJmZ
+        mQCZmcwAmZn/AJnMAACZzDMAZsxmAJnMmQCZzMwAmcz/AJn/AACZ/zMAmcxmAJn/mQCZ/8wAmf//AMwA
+        AACZADMAzABmAMwAmQDMAMwAmTMAAMwzMwDMM2YAzDOZAMwzzADMM/8AzGYAAMxmMwCZZmYAzGaZAMxm
+        zACZZv8AzJkAAMyZMwDMmWYAzJmZAMyZzADMmf8AzMwAAMzMMwDMzGYAzMyZAMzMzADMzP8AzP8AAMz/
+        MwCZ/2YAzP+ZAMz/zADM//8AzAAzAP8AZgD/AJkAzDMAAP8zMwD/M2YA/zOZAP8zzAD/M/8A/2YAAP9m
+        MwDMZmYA/2aZAP9mzADMZv8A/5kAAP+ZMwD/mWYA/5mZAP+ZzAD/mf8A/8wAAP/MMwD/zGYA/8yZAP/M
+        zAD/zP8A//8zAMz/ZgD//5kA///MAGZm/wBm/2YAZv//AP9mZgD/Zv8A//9mACEApQBfX18Ad3d3AIaG
+        hgCWlpYAy8vLALKysgDX19cA3d3dAOPj4wDq6uoA8fHxAPj4+ADw+/8ApKCgAICAgAAAAP8AAP8AAAD/
+        /wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZWUAAAAAZWUAAAAAAAAAAABlZQAAZQAAZQAAAAAAAAAA
+        AGVlAGVlZQAAAAAAAAAAAAAAZWVlAAAAAAAAAAAAAAAAAGVlZQAAAAAAAAAAAAAAAGVlAGVlZQAAAAAA
+        AAAAAGVlAABlAABlAAAAAAAAAGVlAAAAAGVlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJJAAAAAAAAO//AADp5wAA7NsAAO5H
+        AADvHwAA7x8AAO5HAADs2wAA6ecAAO//AAAAAAAASSQAAAAAAAA=
+</value>
+  </data>
+</root>

@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FA5C98A-0C83-4914-BBB4-296199DF4426}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Defraser.Test</RootNamespace>
+    <AssemblyName>TestDefraser</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ffmpegPlatform>x86</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ffmpegPlatform>x86</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86-64</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86-64</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86-64</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Itanium' ">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ffmpegPlatform>x86-64</ffmpegPlatform>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="TestParametersChecker.cs" />
+    <Compile Include="Common\KeyFrameVerification.cs" />
+    <Compile Include="Common\ResultNodeDescriber.cs" />
+    <Compile Include="Common\ResultNodeDescriptionBuilder.cs" />
+    <Compile Include="DataExtensions.cs" />
+    <Compile Include="Common\CodecStreamVerification.cs" />
+    <Compile Include="Common\DataBlockVerification.cs" />
+    <Compile Include="Common\DataPacketVerification.cs" />
+    <Compile Include="Common\DetectorTester.cs" />
+    <Compile Include="Common\FragmentVerification.cs" />
+    <Compile Include="Common\IFragmentedVerification.cs" />
+    <Compile Include="Common\MetaDataVerification.cs" />
+    <Compile Include="H264\ByteArrayDataReaderTest.cs" />
+    <Compile Include="H264\TestH264CavlcInByteStream.cs" />
+    <Compile Include="H264\TestH264CabacInByteStream.cs" />
+    <Compile Include="H264\TestH264CavlcInNalUnitStream.cs" />
+    <Compile Include="Mpeg2Detector\Mpeg2PluginTest.cs" />
+    <Compile Include="Common\PluginTester.cs" />
+    <Compile Include="Common\ResultAttributeVerification.cs" />
+    <Compile Include="Common\ResultNodeVerification.cs" />
+    <Compile Include="Mpeg2Detector\TestMpeg1Video.cs" />
+    <Compile Include="Mpeg2Detector\TestMpeg2Detector.cs" />
+    <Compile Include="Mpeg2Detector\TestMpeg2Video.cs" />
+    <Compile Include="TestIssue2804.cs" />
+    <Compile Include="TestFFmpeg.cs" />
+    <Compile Include="MockByteStreamParser.cs" />
+    <Compile Include="MockDataReaderPool.cs" />
+    <Compile Include="DataReaderTest.cs" />
+    <Compile Include="DummyProject.cs" />
+    <Compile Include="DummyResult.cs" />
+    <Compile Include="TestAsfDetector.cs" />
+    <Compile Include="TestByteStreamParser.cs" />
+    <Compile Include="TestDataBlock.cs" />
+    <Compile Include="TestDataPacketNode.cs" />
+    <Compile Include="TestDataReaderPool.cs" />
+    <Compile Include="TestDataScanner.cs" />
+    <Compile Include="TestFileDataWriter.cs" />
+    <Compile Include="TestH264Parser.cs" />
+    <Compile Include="Mpeg2Detector\MpegFragmentationTest.cs" />
+    <Compile Include="TestIssue2490.cs" />
+    <Compile Include="TestIssue2492.cs" />
+    <Compile Include="TestIssue2496.cs" />
+    <Compile Include="TestIssue2498.cs" />
+    <Compile Include="TestIssue2810.cs" />
+    <Compile Include="TestIssue2814.cs" />
+    <Compile Include="TestIssue2822.cs" />
+    <Compile Include="TestLinkedDictionary.cs" />
+    <Compile Include="MockAttribute.cs" />
+    <Compile Include="MockAttributeHeader.cs" />
+    <Compile Include="MockCompositeAttribute.cs" />
+    <Compile Include="MockDataReader.cs" />
+    <Compile Include="MockDetectorDataStructures.cs" />
+    <Compile Include="MockDetector.cs" />
+    <Compile Include="MockDetectorReaderWriter.cs" />
+    <Compile Include="MockDetectorSave.cs" />
+    <Compile Include="MockHeader.cs" />
+    <Compile Include="MockBrokenHeader.cs" />
+    <Compile Include="MockHeaderCheckAttribute.cs" />
+    <Compile Include="MockHeaderCheckAttributeInvalidateResult.cs" />
+    <Compile Include="MockHeaderCheckAttributeNonExisting.cs" />
+    <Compile Include="MockHeaderTypeThree.cs" />
+    <Compile Include="MockParser.cs" />
+    <Compile Include="MockParserNoFirstHeader.cs" />
+    <Compile Include="MockParserRewind.cs" />
+    <Compile Include="MockConfigurableDetector.cs" />
+    <Compile Include="MockSubHeader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MockResult.cs" />
+    <Compile Include="Test3GppDetector.cs" />
+    <Compile Include="TestAttributes.cs" />
+    <Compile Include="TestAviDetector.cs" />
+    <Compile Include="TestBitStreamDataReader.cs" />
+    <Compile Include="TestBufferedDataReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestByteStreamDataReader.cs" />
+    <Compile Include="TestCodecs.cs" />
+    <Compile Include="TestDataPacket.cs" />
+    <Compile Include="TestConfigurationItem.cs" />
+    <Compile Include="TestDetectorFactory.cs" />
+    <Compile Include="TestEnum.cs" />
+    <Compile Include="TestFileScanner.cs" />
+    <Compile Include="TestFileScannerWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestIssue2256.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestFourCCExtensionMethods.cs" />
+    <Compile Include="TestFramework.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestHeader.cs" />
+    <Compile Include="TestNewMpeg4Detector.cs" />
+    <Compile Include="TestParser.cs" />
+    <Compile Include="TestDetector.cs" />
+    <Compile Include="TestFileDataReader.cs" />
+    <Compile Include="TestFragmentedDataReader.cs" />
+    <Compile Include="TestInputFile.cs" />
+    <Compile Include="TestNullableType.cs" />
+    <Compile Include="TestIssue2821.cs" />
+    <Compile Include="TestProgressDataReader.cs" />
+    <Compile Include="TestProject.cs" />
+    <Compile Include="TestProjectManager.cs" />
+    <Compile Include="TestQtDetector.cs" />
+    <Compile Include="TestRegisterCreator.cs" />
+    <Compile Include="TestResultReaderWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSave.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSaveAsContiguousFile.cs" />
+    <Compile Include="TestSaveAsSeparateFiles.cs" />
+    <Compile Include="TestSaveAsSingleFile.cs" />
+    <Compile Include="TestSerialization.cs" />
+    <Compile Include="TestSubProgressReporter.cs" />
+    <Compile Include="TestUnknownFormatDetector.cs" />
+    <Compile Include="TestVlc.cs" />
+    <Compile Include="TestVlcTable.cs" />
+    <Compile Include="TestWeakDictionary.cs" />
+    <Compile Include="TestConfigurable.cs" />
+    <Compile Include="ThumbUtilTest.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=1.4.3.536, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\nunit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.5.0.1337, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ROOT\library\RhinoMocks\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3GppDetector\3GppDetector.csproj">
+      <Project>{793498D7-E1F5-4340-8D7F-B4DE0B9243DF}</Project>
+      <Name>3GppDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsfDetector\AsfDetector.csproj">
+      <Project>{A473A2DE-28B2-40B2-8B60-3C428911CD22}</Project>
+      <Name>AsfDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AviDetector\AviDetector.csproj">
+      <Project>{3F42D14E-5C05-4CAE-902A-1CCF52E46BA5}</Project>
+      <Name>AviDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+      <Project>{FFFCB9C7-B032-4C80-AB5E-497D30CE7D20}</Project>
+      <Name>DataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DetectorCommon\DetectorCommon.csproj">
+      <Project>{C90619FD-71B3-4C15-8C67-B0309D8BEB0B}</Project>
+      <Name>DetectorCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FFmpegConverter\FFmpegConverter.csproj">
+      <Project>{2CADA07A-C477-4F9F-A9D9-0C518AA16A19}</Project>
+      <Name>FFmpegConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{889BA7E9-FDF1-404F-A0B7-DE1ABDEB137F}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuiCe\GuiCe.csproj">
+      <Project>{4B0B4B90-C53E-40BD-B782-6ECB631D909C}</Project>
+      <Name>GuiCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H264Detector\H264Detector.csproj">
+      <Project>{9CF91738-4EB5-453A-AE7A-9743D6ABE664}</Project>
+      <Name>H264Detector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\Interface.csproj">
+      <Project>{AA32C79B-875C-45D3-AF33-7B3CBDA82A93}</Project>
+      <Name>Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mpeg2Detector\Mpeg2Detector.csproj">
+      <Project>{6FB33427-E872-4D2E-8EB1-F6E6D3547869}</Project>
+      <Name>Mpeg2Detector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewMpeg4Detector\Mpeg4Detector.csproj">
+      <Project>{BBAA2F7C-FE21-4950-8066-F0F5CDBD2EC9}</Project>
+      <Name>Mpeg4Detector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnknownFormatDetector\UnknownFormatDetector.csproj">
+      <Project>{68162206-4C49-4269-9EDF-C08531D8F191}</Project>
+      <Name>UnknownFormatDetector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{A7D53AEE-D37F-4EEE-8776-13108BB9D53F}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\ROOT\tools\StyleCop\v4.3\Microsoft.StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>if "$(ConfigurationName)" == "Release" del /s /q "$(ProjectDir)bin"
+if "$(ConfigurationName)" == "Release" del /s /q "$(ProjectDir)obj"
+copy /y "$(SolutionDir)ROOT\Key\DefraserDummy.snk" "$(SolutionDir)ROOT\Key\Defraser.snk"
+if exist "$(SolutionDir)ROOT\Key\DefraserSecret.snk" copy /y "$(SolutionDir)ROOT\Key\DefraserSecret.snk" "$(SolutionDir)ROOT\Key\Defraser.snk"</PreBuildEvent>
+    <PostBuildEvent>copy /y "$(SolutionDir)ROOT\library\ffmpeg\ffmpeg*.dll" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
